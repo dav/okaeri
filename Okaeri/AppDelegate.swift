@@ -12,33 +12,48 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBar = NSStatusBar.systemStatusBar()
     var statusBarItem : NSStatusItem = NSStatusItem()
     var menu: NSMenu = NSMenu()
-    var menuItem : NSMenuItem = NSMenuItem()
+    var showMenuItem : NSMenuItem = NSMenuItem()
     var isShowing : Bool = false
+    var okaeriMgr : OkaeriManager?
     
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
+        println("Application did finish launching.")
         self.window!.orderOut(self)
         self.isShowing = false
+        
+        okaeriMgr = OkaeriManager()
+        println("OkaeriManager: \(okaeriMgr).")
     }
     
     func applicationWillTerminate(aNotification: NSNotification) {
     }
 
     override func awakeFromNib() {
-        titleLabel.stringValue = "Okaeri おかえり"
+        println("awakeFromNib.")
+        let bundleInfo : NSDictionary = NSBundle.mainBundle().infoDictionary!
+        let versionString : AnyObject! = bundleInfo["CFBundleShortVersionString"]
+        titleLabel.stringValue = "Okaeri おかえり v\(versionString)"
         
-        //Add statusBarItem
         statusBarItem = statusBar.statusItemWithLength(-1)
         statusBarItem.menu = menu
         statusBarItem.title = "お"
         
-        //Add menuItem to menu
-        menuItem.title = "Show"
-        menuItem.action = Selector("toggleWindowVisibility:")
+        showMenuItem = self.addMenuItem("Show", action: "toggleWindowVisibility:")
+        self.addMenuItem("Quit", action: "userRequestedQuit:")
+    }
+}
+
+extension AppDelegate {
+    func addMenuItem(title: String, action: String) -> NSMenuItem {
+        let menuItem : NSMenuItem = NSMenuItem()
+        menuItem.title = title
+        menuItem.action = Selector(action)
         menuItem.keyEquivalent = ""
         menu.addItem(menuItem)
+        return menuItem
     }
-    
-    func toggleWindowVisibility(sender: AnyObject){
+
+    func toggleWindowVisibility(sender: AnyObject) {
         // TODO not sure why this won't compile: if (self.window!.occlusionState & NSWindowOcclusionStateVisible == 0) {
         if (self.isShowing) {
             self.window!.orderOut(self)
@@ -47,8 +62,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self.window!.orderFront(self)
             self.isShowing = true
         }
-        menuItem.state = self.isShowing ? NSOnState : NSOffState
+        showMenuItem.state = self.isShowing ? NSOnState : NSOffState
     }
 
+    func userRequestedQuit(sender: AnyObject) {
+        NSApplication.sharedApplication().terminate(self)
+    }
 }
-
