@@ -1,10 +1,5 @@
-//
-//  AppDelegate.swift
-//  Okaeri
-//
-//  Created by Dav on 11/22/14.
-//  Copyright (c) 2014 Sekai No. All rights reserved.
-//
+//  ただいま :: Tadaima
+//  おかえり :: Okaeri
 
 import Cocoa
 
@@ -12,16 +7,48 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    @IBOutlet weak var titleLabel: NSTextField!
 
-
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+    var statusBar = NSStatusBar.systemStatusBar()
+    var statusBarItem : NSStatusItem = NSStatusItem()
+    var menu: NSMenu = NSMenu()
+    var menuItem : NSMenuItem = NSMenuItem()
+    var isShowing : Bool = false
+    
+    func applicationDidFinishLaunching(aNotification: NSNotification?) {
+        self.window!.orderOut(self)
+        self.isShowing = false
     }
-
+    
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
     }
 
+    override func awakeFromNib() {
+        titleLabel.stringValue = "Okaeri おかえり"
+        
+        //Add statusBarItem
+        statusBarItem = statusBar.statusItemWithLength(-1)
+        statusBarItem.menu = menu
+        statusBarItem.title = "お"
+        
+        //Add menuItem to menu
+        menuItem.title = "Show"
+        menuItem.action = Selector("toggleWindowVisibility:")
+        menuItem.keyEquivalent = ""
+        menu.addItem(menuItem)
+    }
+    
+    func toggleWindowVisibility(sender: AnyObject){
+        // TODO not sure why this won't compile: if (self.window!.occlusionState & NSWindowOcclusionStateVisible == 0) {
+        if (self.isShowing) {
+            self.window!.orderOut(self)
+            self.isShowing = false
+        } else {
+            self.window!.orderFront(self)
+            self.isShowing = true
+        }
+        menuItem.state = self.isShowing ? NSOnState : NSOffState
+    }
 
 }
 
