@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		574CDBFC1A2107C400EEB5C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CDBFB1A2107C400EEB5C2 /* AppDelegate.swift */; };
+		574CDBFE1A2107C400EEB5C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574CDBFD1A2107C400EEB5C2 /* Images.xcassets */; };
+		574CDC011A2107C500EEB5C2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574CDBFF1A2107C500EEB5C2 /* MainMenu.xib */; };
+		574CDC0D1A2107C500EEB5C2 /* OkaeriTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574CDC0C1A2107C500EEB5C2 /* OkaeriTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		574CDC071A2107C500EEB5C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 574CDBEE1A2107C400EEB5C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 574CDBF51A2107C400EEB5C2;
+			remoteInfo = Okaeri;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		574CDBF61A2107C400EEB5C2 /* Okaeri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Okaeri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		574CDBFA1A2107C400EEB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574CDBFB1A2107C400EEB5C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		574CDBFD1A2107C400EEB5C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		574CDC001A2107C500EEB5C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		574CDC061A2107C500EEB5C2 /* OkaeriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OkaeriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		574CDC0B1A2107C500EEB5C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574CDC0C1A2107C500EEB5C2 /* OkaeriTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkaeriTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		574CDBF31A2107C400EEB5C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574CDC031A2107C500EEB5C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		574CDBED1A2107C400EEB5C2 = {
+			isa = PBXGroup;
+			children = (
+				574CDBF81A2107C400EEB5C2 /* Okaeri */,
+				574CDC091A2107C500EEB5C2 /* OkaeriTests */,
+				574CDBF71A2107C400EEB5C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		574CDBF71A2107C400EEB5C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				574CDBF61A2107C400EEB5C2 /* Okaeri.app */,
+				574CDC061A2107C500EEB5C2 /* OkaeriTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		574CDBF81A2107C400EEB5C2 /* Okaeri */ = {
+			isa = PBXGroup;
+			children = (
+				574CDBFB1A2107C400EEB5C2 /* AppDelegate.swift */,
+				574CDBFD1A2107C400EEB5C2 /* Images.xcassets */,
+				574CDBFF1A2107C500EEB5C2 /* MainMenu.xib */,
+				574CDBF91A2107C400EEB5C2 /* Supporting Files */,
+			);
+			path = Okaeri;
+			sourceTree = "<group>";
+		};
+		574CDBF91A2107C400EEB5C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				574CDBFA1A2107C400EEB5C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		574CDC091A2107C500EEB5C2 /* OkaeriTests */ = {
+			isa = PBXGroup;
+			children = (
+				574CDC0C1A2107C500EEB5C2 /* OkaeriTests.swift */,
+				574CDC0A1A2107C500EEB5C2 /* Supporting Files */,
+			);
+			path = OkaeriTests;
+			sourceTree = "<group>";
+		};
+		574CDC0A1A2107C500EEB5C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				574CDC0B1A2107C500EEB5C2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		574CDBF51A2107C400EEB5C2 /* Okaeri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574CDC101A2107C500EEB5C2 /* Build configuration list for PBXNativeTarget "Okaeri" */;
+			buildPhases = (
+				574CDBF21A2107C400EEB5C2 /* Sources */,
+				574CDBF31A2107C400EEB5C2 /* Frameworks */,
+				574CDBF41A2107C400EEB5C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Okaeri;
+			productName = Okaeri;
+			productReference = 574CDBF61A2107C400EEB5C2 /* Okaeri.app */;
+			productType = "com.apple.product-type.application";
+		};
+		574CDC051A2107C500EEB5C2 /* OkaeriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574CDC131A2107C500EEB5C2 /* Build configuration list for PBXNativeTarget "OkaeriTests" */;
+			buildPhases = (
+				574CDC021A2107C500EEB5C2 /* Sources */,
+				574CDC031A2107C500EEB5C2 /* Frameworks */,
+				574CDC041A2107C500EEB5C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				574CDC081A2107C500EEB5C2 /* PBXTargetDependency */,
+			);
+			name = OkaeriTests;
+			productName = OkaeriTests;
+			productReference = 574CDC061A2107C500EEB5C2 /* OkaeriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		574CDBEE1A2107C400EEB5C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Sekai No";
+				TargetAttributes = {
+					574CDBF51A2107C400EEB5C2 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					574CDC051A2107C500EEB5C2 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 574CDBF51A2107C400EEB5C2;
+					};
+				};
+			};
+			buildConfigurationList = 574CDBF11A2107C400EEB5C2 /* Build configuration list for PBXProject "Okaeri" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 574CDBED1A2107C400EEB5C2;
+			productRefGroup = 574CDBF71A2107C400EEB5C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				574CDBF51A2107C400EEB5C2 /* Okaeri */,
+				574CDC051A2107C500EEB5C2 /* OkaeriTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		574CDBF41A2107C400EEB5C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574CDBFE1A2107C400EEB5C2 /* Images.xcassets in Resources */,
+				574CDC011A2107C500EEB5C2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574CDC041A2107C500EEB5C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		574CDBF21A2107C400EEB5C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574CDBFC1A2107C400EEB5C2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574CDC021A2107C500EEB5C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574CDC0D1A2107C500EEB5C2 /* OkaeriTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		574CDC081A2107C500EEB5C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 574CDBF51A2107C400EEB5C2 /* Okaeri */;
+			targetProxy = 574CDC071A2107C500EEB5C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		574CDBFF1A2107C500EEB5C2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				574CDC001A2107C500EEB5C2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		574CDC0E1A2107C500EEB5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		574CDC0F1A2107C500EEB5C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		574CDC111A2107C500EEB5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Okaeri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		574CDC121A2107C500EEB5C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Okaeri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		574CDC141A2107C500EEB5C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OkaeriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Okaeri.app/Contents/MacOS/Okaeri";
+			};
+			name = Debug;
+		};
+		574CDC151A2107C500EEB5C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OkaeriTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Okaeri.app/Contents/MacOS/Okaeri";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		574CDBF11A2107C400EEB5C2 /* Build configuration list for PBXProject "Okaeri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574CDC0E1A2107C500EEB5C2 /* Debug */,
+				574CDC0F1A2107C500EEB5C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574CDC101A2107C500EEB5C2 /* Build configuration list for PBXNativeTarget "Okaeri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574CDC111A2107C500EEB5C2 /* Debug */,
+				574CDC121A2107C500EEB5C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		574CDC131A2107C500EEB5C2 /* Build configuration list for PBXNativeTarget "OkaeriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574CDC141A2107C500EEB5C2 /* Debug */,
+				574CDC151A2107C500EEB5C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 574CDBEE1A2107C400EEB5C2 /* Project object */;
+}
