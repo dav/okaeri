@@ -24,7 +24,8 @@ extension OkaeriManager {
                     withContext context: NSData!,
                     invitationHandler: ((Bool, MCSession!) -> Void)!) {
         session = MCSession(peer: localPeerID, securityIdentity: nil, encryptionPreference: .None)
-        println("MC: Invitation received from \(peerID)")
+        let userName : NSString! = NSString(data: context, encoding: NSUTF8StringEncoding)
+        println("MC: Invitation received from \(userName) ::: \(peerID)")
         session!.delegate = self
         invitationHandler(true, session!)
     }
@@ -34,8 +35,8 @@ extension OkaeriManager {
 
 extension OkaeriManager {
     func session(session: MCSession!, peer peerID: MCPeerID!, didChangeState state: MCSessionState) {
-        println("MC: Session \(session) changed state to \(state)")
-        if let block = onStateChange! {
+        println("MC: Session \(session) changed state to \(state.rawValue)")
+        if let block = onStateChange? {
             block(state: state)
         }
     }
